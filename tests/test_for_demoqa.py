@@ -5,7 +5,7 @@ import allure
 
 
 @allure.title("Successful fill form")
-def test_registration_page():
+def test_registration_page(setup_browser):
     # GIVEN
     with allure.step("Open registration form"):
         reg_page = RegistrationPage()
